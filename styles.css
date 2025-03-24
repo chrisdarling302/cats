@@ -10,22 +10,18 @@
 }
 
 .nav__container {
-    width: 100%;
-    max-width: 1200px;
     padding: 0 24px;
-    margin: 0 auto;
     display: flex;    
 }
 
 .row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 24px;
     display: flex;
-    height: 250px;
     justify-content: space-between;
     align-items: center;
-    background-image: url("assets/cat-banner.gif");
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .bg-img {
@@ -72,4 +68,25 @@ NAV
     padding: 8px;
 }
 
+/*
 
+CONTENT
+
+*/
+
+.content__wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content__wrapper--title {
+    font-size: 42px;
+    color: #4499db;
+    margin-bottom: 16px;
+}
+
+.content__wrapper--sub-title {
+    font-size: 32px;
+}
