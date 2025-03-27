@@ -132,6 +132,32 @@ CONTENT
     margin-bottom: 16px;
 }
 
+.content__wrapper--title,
+.content__wrapper--sub-title {
+    animation: fadeIn 4s;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
 .content__wrapper--sub-title {
     font-size: 32px;
 }
