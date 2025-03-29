@@ -27,7 +27,7 @@ async function fetchAnimals() {
   const color = searchInput.value;
   const token = await getAccessToken();
   const response = await fetch(
-    `https://api.petfinder.com/v2/animals?color=${color}`,
+    `https://api.petfinder.com/v2/types/cat`,
     {
       headers: {
         Authorization: `Bearer ${token}`,
