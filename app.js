@@ -24,10 +24,10 @@ async function getAccessToken() {
 }
 
 async function fetchAnimals() {
-  const color = searchInput.value;
+  const types = searchInput.value;
   const token = await getAccessToken();
   const response = await fetch(
-    `https://api.petfinder.com/v2/types/cat`,
+    `https://api.petfinder.com/v2/animals?types=${types}`,
     {
       headers: {
         Authorization: `Bearer ${token}`,
